@@ -12,9 +12,10 @@
   - [x] Bronze, silver, gold modules and `run_all` written
   - [x] **Docker build and full run on the user's machine** (8 Oct: 8 tests pass; 9,554,778 bronze rows, 9,417,635 silver, 137,142 quarantined, 20,623 gold; second run idempotent)
   - [x] Run explained in `docs/guide/03-step2-run-decoded.pdf` (LaTeX)
-- [ ] **Step 3** Git repo on GitHub (outside OneDrive) and CI running the tests
+- [x] **Step 3** Git repo on GitHub (outside OneDrive) and CI running the tests
   - [x] `ci.yml`, `.gitattributes`, decision D12, README badge and architecture picture, guide `docs/guide/04-git-and-ci.pdf`
-  - [ ] **User: copy to `C:\dev\pipedoctor`, `git init`, create the private repo, push, CI green** (pending)
+  - [x] **User: copied to `C:\dev\pipedoctor`, private repo `Aymannel04/pipedoctor` created, pushed, CI #1 green in 55 s** (10 Oct, commit 4cbe2b0)
+  - [ ] Fix git author email (placeholder `YOUR-GITHUB-EMAIL` in commit 4cbe2b0), then delete `data/` in the OneDrive copy
 - [ ] **Step 4** Airflow DAG for the pipeline, failure callback writing an event, run logs kept
 - [ ] **Step 5** Interview requests sent (5+), doc checkpoint 1, sprint review
 

@@ -76,3 +76,11 @@ One entry per work session, newest at the bottom. Each entry: what we did, why, 
 - **Trade-off:** CI installs dependencies directly instead of building the Docker image (about 2.5 min faster); same pinned versions.
 - **Next:** user runs the commands and reports whether CI is green; then sprint Step 4 (Airflow DAG with failure callback).
 
+---
+
+## 2026-10-10 (11): Step 3 done, CI green
+- **Did:** project copied to `C:\dev\pipedoctor`, `git init`, private repo `Aymannel04/pipedoctor`, first push (41 files, `data/` excluded). CI run #1 passed in 55 s.
+- **Found:** the commit was authored with the placeholder email `YOUR-GITHUB-EMAIL`. Fix: set the real email and `git commit --amend --reset-author --no-edit`, then `git push --force-with-lease` (safe while history is one commit).
+- **Cleanup left:** delete `data/` in the OneDrive copy to stop the sync. The working repo is now `C:\dev\pipedoctor`.
+- **Next:** sprint Step 4, Airflow DAG with a failure callback.
+
