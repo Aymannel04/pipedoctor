@@ -1,0 +1,15 @@
+services:
+  lakehouse:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - ./data:/data
+    environment:
+      SPARK_DRIVER_MEMORY: 4g
+      SHUFFLE_PARTITIONS: "8"
+    tty: true
+    stdin_open: true
+    command: bash

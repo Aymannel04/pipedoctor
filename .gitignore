@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+# Data and local lakehouse
+data/
+spark-warehouse/
+metastore_db/
+derby.log
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
